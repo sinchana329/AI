@@ -1,3 +1,4 @@
+print("sinchana 1BM23CS329")
 def print_board(state):
     """Print the board from the state array where state[col] = row."""
     n = len(state)
