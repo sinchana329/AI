@@ -1,0 +1,83 @@
+print("sinchana 1bm213cs329")
+import random
+import math
+
+def initial_state():
+    return [random.randint(0, 7) for _ in range(8)]
+
+def cost(state):
+    attacks = 0
+    for i in range(8):
+        for j in range(i + 1, 8):
+            if state[i] == state[j] or abs(state[i] - state[j]) == abs(i - j):
+                attacks += 1
+    return -attacks
+
+
+def random_neighbor(state):
+    neighbor = state[:]
+    col = random.randint(0, 7)
+    new_row = random.randint(0, 7)
+    while new_row == neighbor[col]:
+        new_row = random.randint(0, 7)
+    neighbor[col] = new_row
+    return neighbor
+
+
+def print_board(state):
+    for row in range(8):
+        line = ""
+        for col in range(8):
+            if state[col] == row:
+                line += " Q "
+            else:
+                line += " . "
+        print(line)
+    print()
+
+
+def simulated_annealing(verbose=True):
+    current = initial_state()
+    T = 100.0
+    cooling_rate = 0.95
+    min_T = 0.01
+    step = 0
+
+    if verbose:
+        print(f"Initial State: {current}, Cost: {-cost(current)}")
+        print_board(current)
+
+    while T > min_T and cost(current) != 0:
+        next_state = random_neighbor(current)
+        delta_E = cost(next_state) - cost(current)
+
+        if verbose:
+            print(f"Step {step}:")
+            print(f"  Current Cost: {-cost(current)}")
+            print(f"  Next State: {next_state}, Cost: {-cost(next_state)}")
+            print(f"  ΔE = {delta_E}")
+            if delta_E > 0:
+                print("  ✔ Move accepted (better state)")
+            else:
+                prob = math.exp(delta_E / T)
+                rand_val = random.random()
+                if rand_val < prob:
+                    print(f"  ✔ Move accepted (worse state, prob={prob:.4f}, rand={rand_val:.4f})")
+                else:
+                    print(f"  ✘ Move rejected (prob={prob:.4f}, rand={rand_val:.4f})")
+
+        if delta_E > 0 or random.random() < math.exp(delta_E / T):
+            current = next_state
+
+        T *= cooling_rate
+        step += 1
+        if verbose:
+            print_board(current)
+
+    if verbose:
+        print(f"Final State (step {step}): {current}, Cost: {-cost(current)}")
+        print_board(current)
+
+    return current
+
+final_state = simulated_annealing(verbose=True)
