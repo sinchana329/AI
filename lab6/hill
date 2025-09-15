@@ -1,0 +1,99 @@
+def print_board(state):
+    """Print the board from the state array where state[col] = row."""
+    n = len(state)
+    for r in range(n):
+        row = ""
+        for c in range(n):
+            if state[c] == r:
+                row += " Q "
+            else:
+                row += " . "
+        print(row)
+    print("\n")
+
+def calculate_cost(state):
+    """
+    Calculate the number of attacking pairs of queens.
+    Two queens attack each other if they are on the same row or diagonal.
+    Columns are unique by problem definition.
+    """
+    cost = 0
+    n = len(state)
+    for i in range(n):
+        for j in range(i+1, n):
+          
+            if state[i] == state[j]:
+                cost += 1
+      
+            elif abs(state[i] - state[j]) == abs(i - j):
+                cost += 1
+    return cost
+
+def get_neighbors(state):
+    """
+    Generate all neighbors by moving each queen in its column to
+    every other row.
+    """
+    neighbors = []
+    n = len(state)
+    for col in range(n):
+        for row in range(n):
+            if state[col] != row:
+                neighbor = state.copy()
+                neighbor[col] = row
+                neighbors.append(neighbor)
+    return neighbors
+
+def hill_climbing(initial_state):
+    """
+    Hill Climbing algorithm to solve N-Queens.
+    Prints the cost of current state and neighbors at each step.
+    Continues until a goal state (cost=0) is found or stuck in local minimum.
+    """
+    current_state = initial_state
+    current_cost = calculate_cost(current_state)
+    step = 0
+    
+    print(f"Initial state (Step {step}): Cost = {current_cost}")
+    print_board(current_state)
+
+    while True:
+        neighbors = get_neighbors(current_state)
+        
+       
+        neighbors_costs = []
+        for neighbor in neighbors:
+            cost = calculate_cost(neighbor)
+            neighbors_costs.append((neighbor, cost))
+        
+    
+        neighbors_costs.sort(key=lambda x: x[1])
+        best_neighbor, best_cost = neighbors_costs[0]
+        
+        print(f"Step {step+1}: Best neighbor cost = {best_cost}")
+        
+
+        print("Neighbors and their costs:")
+        for i, (neighbor, cost) in enumerate(neighbors_costs):
+            print(f"{i+1}. State: {neighbor} Cost: {cost}")
+        
+   
+        if best_cost >= current_cost:
+            print("No better neighbor found, stopping search.")
+            break
+
+        current_state = best_neighbor
+        current_cost = best_cost
+        step += 1
+        
+        print(f"\nAfter Step {step}:")
+        print(f"Current state: {current_state}, Cost = {current_cost}")
+        print_board(current_state)
+        
+       
+        if current_cost == 0:
+            print(f"Goal reached in {step} steps!")
+            break
+
+initial_state = [3, 1, 2, 0]  
+hill_climbing(initial_state)
