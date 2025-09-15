@@ -1,0 +1,2539 @@
+Initial State: [0, 5, 1, 2, 0, 5, 1, 6], Cost: 7
+ Q  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 0:
+  Current Cost: 7
+  Next State: [0, 5, 1, 2, 0, 5, 5, 6], Cost: 11
+  ΔE = -4
+  ✔ Move accepted (worse state, prob=0.9608, rand=0.8020)
+ Q  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 1:
+  Current Cost: 11
+  Next State: [0, 5, 1, 2, 0, 3, 5, 6], Cost: 8
+  ΔE = 3
+  ✔ Move accepted (better state)
+ Q  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 2:
+  Current Cost: 8
+  Next State: [0, 5, 1, 6, 0, 3, 5, 6], Cost: 6
+  ΔE = 2
+  ✔ Move accepted (better state)
+ Q  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 3:
+  Current Cost: 6
+  Next State: [5, 5, 1, 6, 0, 3, 5, 6], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9884, rand=0.2406)
+ .  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 4:
+  Current Cost: 7
+  Next State: [5, 5, 3, 6, 0, 3, 5, 6], Cost: 7
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.6075)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 5:
+  Current Cost: 7
+  Next State: [5, 5, 3, 2, 0, 3, 5, 6], Cost: 10
+  ΔE = -3
+  ✔ Move accepted (worse state, prob=0.9620, rand=0.8460)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 6:
+  Current Cost: 10
+  Next State: [5, 5, 3, 2, 0, 3, 1, 6], Cost: 6
+  ΔE = 4
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 7:
+  Current Cost: 6
+  Next State: [5, 7, 3, 2, 0, 3, 1, 6], Cost: 6
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.0392)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+
+Step 8:
+  Current Cost: 6
+  Next State: [5, 7, 3, 2, 0, 3, 5, 6], Cost: 9
+  ΔE = -3
+  ✔ Move accepted (worse state, prob=0.9558, rand=0.7915)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+
+Step 9:
+  Current Cost: 9
+  Next State: [1, 7, 3, 2, 0, 3, 5, 6], Cost: 7
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+
+Step 10:
+  Current Cost: 7
+  Next State: [6, 7, 3, 2, 0, 3, 5, 6], Cost: 8
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9834, rand=0.4656)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+
+Step 11:
+  Current Cost: 8
+  Next State: [6, 7, 3, 7, 0, 3, 5, 6], Cost: 6
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  Q  .  Q  .  .  .  . 
+
+Step 12:
+  Current Cost: 6
+  Next State: [6, 7, 1, 7, 0, 3, 5, 6], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9817, rand=0.4740)
+ .  .  .  .  Q  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  Q  .  Q  .  .  .  . 
+
+Step 13:
+  Current Cost: 7
+  Next State: [6, 7, 0, 7, 0, 3, 5, 6], Cost: 7
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.7542)
+ .  .  Q  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  Q  .  Q  .  .  .  . 
+
+Step 14:
+  Current Cost: 7
+  Next State: [6, 7, 6, 7, 0, 3, 5, 6], Cost: 10
+  ΔE = -3
+  ✔ Move accepted (worse state, prob=0.9403, rand=0.7173)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  Q  .  Q  .  .  .  . 
+
+Step 15:
+  Current Cost: 10
+  Next State: [6, 7, 6, 2, 0, 3, 5, 6], Cost: 10
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.1083)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+
+Step 16:
+  Current Cost: 10
+  Next State: [6, 3, 6, 2, 0, 3, 5, 6], Cost: 9
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 17:
+  Current Cost: 9
+  Next State: [6, 0, 6, 2, 0, 3, 5, 6], Cost: 11
+  ΔE = -2
+  ✘ Move rejected (prob=0.9533, rand=0.9932)
+ .  Q  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 18:
+  Current Cost: 11
+  Next State: [6, 4, 6, 2, 0, 3, 5, 6], Cost: 8
+  ΔE = 3
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 19:
+  Current Cost: 8
+  Next State: [6, 4, 5, 2, 0, 3, 5, 6], Cost: 7
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 20:
+  Current Cost: 7
+  Next State: [6, 4, 5, 2, 0, 3, 5, 0], Cost: 6
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 21:
+  Current Cost: 6
+  Next State: [6, 4, 5, 2, 0, 3, 5, 6], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9711, rand=0.3031)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 22:
+  Current Cost: 7
+  Next State: [6, 4, 5, 2, 0, 3, 5, 7], Cost: 4
+  ΔE = 3
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 23:
+  Current Cost: 4
+  Next State: [6, 4, 5, 2, 0, 3, 1, 7], Cost: 3
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 24:
+  Current Cost: 3
+  Next State: [6, 4, 5, 2, 0, 4, 1, 7], Cost: 5
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.9338, rand=0.0965)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  Q  .  . 
+ .  .  Q  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 25:
+  Current Cost: 5
+  Next State: [6, 4, 4, 2, 0, 4, 1, 7], Cost: 6
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9646, rand=0.8956)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 26:
+  Current Cost: 6
+  Next State: [6, 4, 4, 4, 0, 4, 1, 7], Cost: 8
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.9269, rand=0.1871)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  Q  Q  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 27:
+  Current Cost: 8
+  Next State: [6, 4, 4, 4, 0, 4, 3, 7], Cost: 8
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.1335)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  Q  Q  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 28:
+  Current Cost: 8
+  Next State: [6, 4, 4, 4, 0, 4, 3, 2], Cost: 10
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.9193, rand=0.0437)
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  Q  . 
+ .  Q  Q  Q  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 29:
+  Current Cost: 10
+  Next State: [6, 0, 4, 4, 0, 4, 3, 2], Cost: 9
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  Q  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  Q  . 
+ .  .  Q  Q  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 30:
+  Current Cost: 9
+  Next State: [6, 0, 4, 0, 0, 4, 3, 2], Cost: 10
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9545, rand=0.7335)
+ .  Q  .  Q  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  Q  . 
+ .  .  Q  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 31:
+  Current Cost: 10
+  Next State: [6, 0, 4, 0, 4, 4, 3, 2], Cost: 10
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.8394)
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  Q  . 
+ .  .  Q  .  Q  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 32:
+  Current Cost: 10
+  Next State: [6, 0, 4, 0, 4, 4, 2, 2], Cost: 9
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 33:
+  Current Cost: 9
+  Next State: [5, 0, 4, 0, 4, 4, 2, 2], Cost: 8
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  Q  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 34:
+  Current Cost: 8
+  Next State: [5, 0, 4, 0, 4, 5, 2, 2], Cost: 6
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+ Q  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 35:
+  Current Cost: 6
+  Next State: [5, 0, 4, 0, 4, 5, 5, 2], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.9416, rand=0.2851)
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+ Q  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 36:
+  Current Cost: 7
+  Next State: [0, 0, 4, 0, 4, 5, 5, 2], Cost: 9
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.8809, rand=0.3456)
+ Q  Q  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+ .  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 37:
+  Current Cost: 9
+  Next State: [0, 7, 4, 0, 4, 5, 5, 2], Cost: 7
+  ΔE = 2
+  ✔ Move accepted (better state)
+ Q  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+ .  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+
+Step 38:
+  Current Cost: 7
+  Next State: [0, 7, 4, 0, 4, 5, 5, 4], Cost: 11
+  ΔE = -4
+  ✘ Move rejected (prob=0.7551, rand=0.9308)
+ Q  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  Q 
+ .  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+
+Step 39:
+  Current Cost: 11
+  Next State: [0, 7, 4, 0, 0, 5, 5, 4], Cost: 8
+  ΔE = 3
+  ✔ Move accepted (better state)
+ Q  .  .  Q  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+
+Step 40:
+  Current Cost: 8
+  Next State: [0, 7, 4, 3, 0, 5, 5, 4], Cost: 8
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.3118)
+ Q  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  Q  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+
+Step 41:
+  Current Cost: 8
+  Next State: [0, 6, 4, 3, 0, 5, 5, 4], Cost: 8
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.9823)
+ Q  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  Q  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 42:
+  Current Cost: 8
+  Next State: [0, 6, 4, 3, 0, 5, 3, 4], Cost: 8
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.1702)
+ Q  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  Q  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 43:
+  Current Cost: 8
+  Next State: [0, 6, 4, 3, 6, 5, 3, 4], Cost: 10
+  ΔE = -2
+  ✘ Move rejected (prob=0.8340, rand=0.9291)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  Q  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  .  Q  .  . 
+ .  Q  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 44:
+  Current Cost: 10
+  Next State: [0, 6, 4, 3, 5, 5, 3, 4], Cost: 9
+  ΔE = 1
+  ✔ Move accepted (better state)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  Q  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 45:
+  Current Cost: 9
+  Next State: [0, 6, 4, 1, 5, 5, 3, 4], Cost: 5
+  ΔE = 4
+  ✔ Move accepted (better state)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 46:
+  Current Cost: 5
+  Next State: [0, 6, 4, 1, 5, 5, 4, 4], Cost: 7
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.8092, rand=0.1489)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 47:
+  Current Cost: 5
+  Next State: [0, 6, 3, 1, 5, 5, 3, 4], Cost: 6
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8946, rand=0.8076)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Step 48:
+  Current Cost: 6
+  Next State: [0, 6, 3, 7, 5, 5, 3, 4], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8893, rand=0.0179)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+
+Step 49:
+  Current Cost: 7
+  Next State: [0, 7, 3, 7, 5, 5, 3, 4], Cost: 8
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8839, rand=0.3886)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  Q  .  .  .  . 
+
+Step 50:
+  Current Cost: 8
+  Next State: [0, 7, 3, 7, 5, 5, 3, 5], Cost: 9
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8781, rand=0.2429)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  Q  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  Q  .  .  .  . 
+
+Step 51:
+  Current Cost: 9
+  Next State: [0, 7, 5, 7, 5, 5, 3, 5], Cost: 10
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8721, rand=0.7784)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  Q  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  Q  .  .  .  . 
+
+Step 52:
+  Current Cost: 10
+  Next State: [0, 7, 5, 7, 5, 2, 3, 5], Cost: 7
+  ΔE = 3
+  ✔ Move accepted (better state)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  Q  .  .  .  . 
+
+Step 53:
+  Current Cost: 7
+  Next State: [0, 2, 5, 7, 5, 2, 3, 5], Cost: 8
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8593, rand=0.3342)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+
+Step 54:
+  Current Cost: 8
+  Next State: [0, 5, 5, 7, 5, 2, 3, 5], Cost: 10
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.7268, rand=0.6159)
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  Q  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+
+Step 55:
+  Current Cost: 10
+  Next State: [5, 5, 5, 7, 5, 2, 3, 5], Cost: 14
+  ΔE = -4
+  ✘ Move rejected (prob=0.5108, rand=0.6649)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  Q  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+
+Step 56:
+  Current Cost: 14
+  Next State: [5, 5, 7, 7, 5, 2, 3, 5], Cost: 13
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  Q  .  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+
+Step 57:
+  Current Cost: 13
+  Next State: [5, 5, 7, 4, 5, 2, 3, 5], Cost: 13
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.4756)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ Q  Q  .  .  Q  .  .  Q 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 58:
+  Current Cost: 13
+  Next State: [5, 5, 7, 4, 5, 2, 3, 6], Cost: 10
+  ΔE = 3
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ Q  Q  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 59:
+  Current Cost: 10
+  Next State: [3, 5, 7, 4, 5, 2, 3, 6], Cost: 8
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 60:
+  Current Cost: 8
+  Next State: [3, 4, 7, 4, 5, 2, 3, 6], Cost: 9
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.8049, rand=0.1056)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 61:
+  Current Cost: 9
+  Next State: [3, 6, 7, 4, 5, 2, 3, 6], Cost: 11
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.6332, rand=0.5612)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 62:
+  Current Cost: 9
+  Next State: [3, 4, 7, 4, 5, 2, 3, 4], Cost: 13
+  ΔE = -4
+  ✘ Move rejected (prob=0.3821, rand=0.9970)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 63:
+  Current Cost: 9
+  Next State: [3, 4, 7, 4, 5, 4, 3, 6], Cost: 13
+  ΔE = -4
+  ✘ Move rejected (prob=0.3632, rand=0.7482)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 64:
+  Current Cost: 9
+  Next State: [3, 4, 7, 4, 5, 2, 3, 2], Cost: 13
+  ΔE = -4
+  ✘ Move rejected (prob=0.3444, rand=0.5766)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 65:
+  Current Cost: 9
+  Next State: [3, 4, 7, 4, 5, 2, 3, 1], Cost: 9
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.5269)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 66:
+  Current Cost: 9
+  Next State: [3, 4, 7, 4, 5, 2, 3, 7], Cost: 10
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.7443, rand=0.2186)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  Q 
+
+Step 67:
+  Current Cost: 10
+  Next State: [3, 4, 7, 4, 5, 2, 3, 6], Cost: 9
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  .  .  . 
+
+Step 68:
+  Current Cost: 9
+  Next State: [3, 4, 3, 4, 5, 2, 3, 6], Cost: 12
+  ΔE = -3
+  ✘ Move rejected (prob=0.3747, rand=0.4082)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  Q  .  .  .  Q  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 69:
+  Current Cost: 12
+  Next State: [3, 4, 3, 4, 5, 2, 1, 6], Cost: 10
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  Q  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 70:
+  Current Cost: 10
+  Next State: [3, 6, 3, 4, 5, 2, 1, 6], Cost: 11
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.6959, rand=0.6121)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 71:
+  Current Cost: 11
+  Next State: [3, 6, 4, 4, 5, 2, 1, 6], Cost: 9
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 72:
+  Current Cost: 9
+  Next State: [3, 6, 4, 4, 5, 2, 3, 6], Cost: 9
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.9941)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 73:
+  Current Cost: 9
+  Next State: [3, 6, 4, 4, 5, 1, 3, 6], Cost: 7
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 74:
+  Current Cost: 7
+  Next State: [3, 6, 4, 4, 4, 1, 3, 6], Cost: 7
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.0549)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  Q  Q  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  Q 
+ .  .  .  .  .  .  .  . 
+
+Step 75:
+  Current Cost: 7
+  Next State: [3, 6, 4, 4, 4, 1, 3, 7], Cost: 7
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.2201)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  Q  . 
+ .  .  Q  Q  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 76:
+  Current Cost: 7
+  Next State: [3, 6, 4, 4, 4, 1, 5, 7], Cost: 6
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 77:
+  Current Cost: 6
+  Next State: [3, 6, 4, 4, 4, 7, 5, 7], Cost: 7
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.5950, rand=0.1838)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  Q  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 78:
+  Current Cost: 7
+  Next State: [3, 6, 4, 4, 2, 7, 5, 7], Cost: 5
+  ΔE = 2
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 79:
+  Current Cost: 5
+  Next State: [2, 6, 4, 4, 2, 7, 5, 7], Cost: 8
+  ΔE = -3
+  ✔ Move accepted (worse state, prob=0.1781, rand=0.1661)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 80:
+  Current Cost: 5
+  Next State: [6, 6, 4, 4, 2, 7, 5, 7], Cost: 8
+  ΔE = -3
+  ✔ Move accepted (worse state, prob=0.1626, rand=0.1193)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 81:
+  Current Cost: 5
+  Next State: [3, 6, 4, 4, 2, 7, 1, 7], Cost: 7
+  ΔE = -2
+  ✘ Move rejected (prob=0.2795, rand=0.7305)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 82:
+  Current Cost: 7
+  Next State: [3, 6, 4, 4, 5, 7, 1, 7], Cost: 7
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.5393)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 83:
+  Current Cost: 7
+  Next State: [6, 6, 4, 4, 5, 7, 1, 7], Cost: 9
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.2435, rand=0.0695)
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  Q  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 84:
+  Current Cost: 7
+  Next State: [3, 6, 4, 0, 5, 7, 1, 7], Cost: 4
+  ΔE = 3
+  ✔ Move accepted (better state)
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 85:
+  Current Cost: 4
+  Next State: [3, 6, 4, 0, 5, 5, 1, 7], Cost: 4
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.6449)
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 86:
+  Current Cost: 4
+  Next State: [5, 6, 4, 0, 5, 5, 1, 7], Cost: 6
+  ΔE = -2
+  ✘ Move rejected (prob=0.1925, rand=0.8227)
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  Q  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 87:
+  Current Cost: 4
+  Next State: [3, 1, 4, 0, 5, 5, 1, 7], Cost: 6
+  ΔE = -2
+  ✘ Move rejected (prob=0.1766, rand=0.4499)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 88:
+  Current Cost: 6
+  Next State: [4, 1, 4, 0, 5, 5, 1, 7], Cost: 6
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.7723)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  Q  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+
+Step 89:
+  Current Cost: 6
+  Next State: [4, 1, 4, 0, 5, 7, 1, 7], Cost: 5
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 90:
+  Current Cost: 5
+  Next State: [7, 1, 4, 0, 5, 7, 1, 7], Cost: 7
+  ΔE = -2
+  ✘ Move rejected (prob=0.1323, rand=0.6743)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 91:
+  Current Cost: 5
+  Next State: [1, 1, 4, 0, 5, 7, 1, 7], Cost: 7
+  ΔE = -2
+  ✔ Move accepted (worse state, prob=0.1190, rand=0.0276)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  Q 
+
+Step 92:
+  Current Cost: 5
+  Next State: [4, 1, 4, 0, 5, 7, 1, 4], Cost: 6
+  ΔE = -1
+  ✔ Move accepted (worse state, prob=0.3261, rand=0.2030)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+
+Step 93:
+  Current Cost: 6
+  Next State: [4, 1, 4, 0, 5, 7, 2, 4], Cost: 5
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+
+Step 94:
+  Current Cost: 5
+  Next State: [4, 4, 4, 0, 5, 7, 2, 4], Cost: 8
+  ΔE = -3
+  ✘ Move rejected (prob=0.0241, rand=0.1702)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+
+Step 95:
+  Current Cost: 5
+  Next State: [4, 1, 4, 0, 7, 7, 2, 4], Cost: 7
+  ΔE = -2
+  ✘ Move rejected (prob=0.0732, rand=0.1006)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  Q  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+
+Step 96:
+  Current Cost: 5
+  Next State: [4, 1, 7, 0, 5, 7, 2, 4], Cost: 4
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 97:
+  Current Cost: 4
+  Next State: [4, 1, 7, 0, 5, 7, 3, 4], Cost: 8
+  ΔE = -4
+  ✘ Move rejected (prob=0.0031, rand=0.0874)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 98:
+  Current Cost: 4
+  Next State: [4, 5, 7, 0, 5, 7, 2, 4], Cost: 6
+  ΔE = -2
+  ✘ Move rejected (prob=0.0474, rand=0.3704)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 99:
+  Current Cost: 4
+  Next State: [4, 1, 7, 4, 5, 7, 2, 4], Cost: 6
+  ΔE = -2
+  ✘ Move rejected (prob=0.0404, rand=0.9301)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 100:
+  Current Cost: 4
+  Next State: [4, 2, 7, 0, 5, 7, 2, 4], Cost: 7
+  ΔE = -3
+  ✘ Move rejected (prob=0.0063, rand=0.5069)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 101:
+  Current Cost: 4
+  Next State: [4, 1, 7, 5, 5, 7, 2, 4], Cost: 6
+  ΔE = -2
+  ✘ Move rejected (prob=0.0286, rand=0.3947)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 102:
+  Current Cost: 4
+  Next State: [7, 1, 7, 0, 5, 7, 2, 4], Cost: 5
+  ΔE = -1
+  ✘ Move rejected (prob=0.1539, rand=0.7406)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 103:
+  Current Cost: 4
+  Next State: [4, 1, 7, 6, 5, 7, 2, 4], Cost: 5
+  ΔE = -1
+  ✘ Move rejected (prob=0.1395, rand=0.3470)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 104:
+  Current Cost: 4
+  Next State: [3, 1, 7, 0, 5, 7, 2, 4], Cost: 4
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.9321)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 105:
+  Current Cost: 4
+  Next State: [3, 1, 7, 0, 7, 7, 2, 4], Cost: 7
+  ΔE = -3
+  ✘ Move rejected (prob=0.0014, rand=0.9841)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 106:
+  Current Cost: 4
+  Next State: [3, 1, 7, 0, 5, 7, 2, 6], Cost: 3
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 107:
+  Current Cost: 3
+  Next State: [3, 1, 7, 0, 1, 7, 2, 6], Cost: 4
+  ΔE = -1
+  ✘ Move rejected (prob=0.0890, rand=0.1247)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 108:
+  Current Cost: 3
+  Next State: [3, 1, 1, 0, 5, 7, 2, 6], Cost: 5
+  ΔE = -2
+  ✘ Move rejected (prob=0.0061, rand=0.3805)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 109:
+  Current Cost: 3
+  Next State: [3, 1, 7, 0, 5, 7, 1, 6], Cost: 4
+  ΔE = -1
+  ✘ Move rejected (prob=0.0686, rand=0.6039)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 110:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 5, 7, 2, 6], Cost: 3
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.7096)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 111:
+  Current Cost: 3
+  Next State: [6, 1, 7, 5, 5, 7, 2, 6], Cost: 6
+  ΔE = -3
+  ✘ Move rejected (prob=0.0001, rand=0.0518)
+ .  .  .  Q  .  .  .  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  Q 
+ .  .  Q  .  .  Q  .  . 
+
+Step 112:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 5, 7, 2, 0], Cost: 3
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.2501)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 113:
+  Current Cost: 3
+  Next State: [7, 1, 7, 0, 5, 7, 2, 0], Cost: 6
+  ΔE = -3
+  ✘ Move rejected (prob=0.0001, rand=0.2010)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 114:
+  Current Cost: 3
+  Next State: [6, 1, 7, 5, 5, 7, 2, 0], Cost: 5
+  ΔE = -2
+  ✘ Move rejected (prob=0.0010, rand=0.1833)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 115:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 2, 7, 2, 0], Cost: 4
+  ΔE = -1
+  ✘ Move rejected (prob=0.0261, rand=0.5384)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 116:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 5, 7, 2, 2], Cost: 5
+  ΔE = -2
+  ✘ Move rejected (prob=0.0005, rand=0.3717)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 117:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 5, 7, 4, 0], Cost: 3
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.8036)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  Q  .  . 
+
+Step 118:
+  Current Cost: 3
+  Next State: [6, 1, 7, 0, 5, 3, 4, 0], Cost: 3
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.6748)
+ .  .  .  Q  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 119:
+  Current Cost: 3
+  Next State: [6, 1, 7, 2, 5, 3, 4, 0], Cost: 2
+  ΔE = 1
+  ✔ Move accepted (better state)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 120:
+  Current Cost: 2
+  Next State: [6, 1, 7, 1, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.4167)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 121:
+  Current Cost: 2
+  Next State: [1, 1, 7, 2, 5, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.1992)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 122:
+  Current Cost: 2
+  Next State: [6, 1, 6, 2, 5, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0054, rand=0.3844)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 123:
+  Current Cost: 2
+  Next State: [6, 7, 7, 2, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.4262)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 124:
+  Current Cost: 2
+  Next State: [6, 4, 7, 2, 5, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.9393)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 125:
+  Current Cost: 2
+  Next State: [6, 7, 7, 2, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.0324)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 126:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 5, 3, 4, 4], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0016, rand=0.2096)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 127:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 5, 4, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.8731)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 128:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 5, 3, 3, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.9180)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 129:
+  Current Cost: 2
+  Next State: [6, 7, 7, 2, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.1564)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 130:
+  Current Cost: 2
+  Next State: [6, 1, 7, 4, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.9319)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 131:
+  Current Cost: 2
+  Next State: [6, 1, 7, 4, 5, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.0888)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  Q  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 132:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 0, 3, 4, 0], Cost: 2
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.8754)
+ .  .  .  .  Q  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 133:
+  Current Cost: 2
+  Next State: [6, 1, 7, 6, 0, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.1283)
+ .  .  .  .  Q  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 134:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 2, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.3192)
+ .  .  .  .  Q  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  .  .  .  . 
+
+Step 135:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 4, 0], Cost: 2
+  ΔE = 0
+  ✔ Move accepted (worse state, prob=1.0000, rand=0.4086)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 136:
+  Current Cost: 2
+  Next State: [6, 1, 5, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.8031)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 137:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 4, 7], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.3165)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 138:
+  Current Cost: 2
+  Next State: [1, 1, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.4872)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 139:
+  Current Cost: 2
+  Next State: [6, 1, 5, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.0213)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 140:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.6425)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 141:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.6514)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 142:
+  Current Cost: 2
+  Next State: [6, 1, 7, 5, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.5433)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 143:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 0, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7002)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 144:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 4, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.1162)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 145:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 2, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.6763)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 146:
+  Current Cost: 2
+  Next State: [6, 5, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.8238)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 147:
+  Current Cost: 2
+  Next State: [5, 1, 7, 2, 7, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.6555)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 148:
+  Current Cost: 2
+  Next State: [6, 1, 5, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.1750)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 149:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 2, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.3443)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 150:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 7, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.6151)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 151:
+  Current Cost: 2
+  Next State: [6, 1, 5, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.6613)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 152:
+  Current Cost: 2
+  Next State: [6, 1, 0, 2, 7, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.3123)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 153:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7683)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 154:
+  Current Cost: 2
+  Next State: [6, 1, 2, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.5229)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 155:
+  Current Cost: 2
+  Next State: [6, 4, 7, 2, 7, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.9481)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 156:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 2, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.9033)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 157:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 4, 7], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.3102)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 158:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 5, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.9100)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 159:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 0, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.4009)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 160:
+  Current Cost: 2
+  Next State: [6, 5, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.1444)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 161:
+  Current Cost: 2
+  Next State: [6, 1, 3, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.4459)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 162:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 3, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.3474)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 163:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 1, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.0429)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 164:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 6, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7574)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 165:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 1, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7339)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 166:
+  Current Cost: 2
+  Next State: [2, 1, 7, 2, 7, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.8276)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 167:
+  Current Cost: 2
+  Next State: [6, 0, 7, 2, 7, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.3564)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 168:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 1, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.8962)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 169:
+  Current Cost: 2
+  Next State: [6, 1, 3, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.1634)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 170:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 4, 4], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.2167)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 171:
+  Current Cost: 2
+  Next State: [6, 1, 7, 2, 7, 3, 2, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7042)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 172:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.6233)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 173:
+  Current Cost: 2
+  Next State: [6, 1, 7, 1, 7, 3, 4, 0], Cost: 5
+  ΔE = -3
+  ✘ Move rejected (prob=0.0000, rand=0.1075)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 174:
+  Current Cost: 2
+  Next State: [6, 1, 5, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7465)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 175:
+  Current Cost: 2
+  Next State: [6, 1, 7, 4, 7, 3, 4, 0], Cost: 4
+  ΔE = -2
+  ✘ Move rejected (prob=0.0000, rand=0.1082)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 176:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.4208)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 177:
+  Current Cost: 2
+  Next State: [6, 2, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.8622)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 178:
+  Current Cost: 2
+  Next State: [6, 3, 7, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.7252)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Step 179:
+  Current Cost: 2
+  Next State: [6, 1, 6, 2, 7, 3, 4, 0], Cost: 3
+  ΔE = -1
+  ✘ Move rejected (prob=0.0000, rand=0.2236)
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
+
+Final State (step 180): [6, 1, 7, 2, 7, 3, 4, 0], Cost: 2
+ .  .  .  .  .  .  .  Q 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+ .  .  .  .  .  Q  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  .  .  .  .  .  .  . 
+ Q  .  .  .  .  .  .  . 
+ .  .  Q  .  Q  .  .  . 
