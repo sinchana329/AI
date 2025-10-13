@@ -1,0 +1,137 @@
+print("Sinchana1BM23CS329")
+from collections import defaultdict
+
+class Fact:
+    def __init__(self, predicate, args):
+        self.predicate = predicate
+        self.args = args
+
+    def __repr__(self):
+        return f"{self.predicate}({', '.join(self.args)})"
+
+    def __eq__(self, other):
+        return isinstance(other, Fact) and self.predicate == other.predicate and self.args == other.args
+
+    def __hash__(self):
+        return hash((self.predicate, tuple(self.args)))
+
+
+def is_variable(term):
+    return isinstance(term, str) and term.islower() and term.isalpha()
+
+
+def unify(x, y, subst=None):
+    if subst is None:
+        subst = {}
+
+    if isinstance(x, list) and isinstance(y, list):
+        if len(x) != len(y):
+            return None
+        for xi, yi in zip(x, y):
+            subst = unify(xi, yi, subst)
+            if subst is None:
+                return None
+        return subst
+
+    if x == y:
+        return subst
+
+    if is_variable(x):
+        return unify_var(x, y, subst)
+
+    if is_variable(y):
+        return unify_var(y, x, subst)
+
+    return None
+
+
+def unify_var(var, x, subst):
+    if var in subst:
+        return unify(subst[var], x, subst)
+    elif x in subst:
+        return unify(var, subst[x], subst)
+    else:
+        # occurs check skipped for simplicity
+        subst[var] = x
+        return subst
+
+
+def substitute(fact, subst):
+    new_args = [subst.get(arg, arg) for arg in fact.args]
+    return Fact(fact.predicate, new_args)
+
+
+def fol_fc_ask(KB, query):
+    inferred = set()
+    new = set(KB['facts'])  # Start with initial facts
+
+    while new:
+        next_new = set()
+        for fact in new:
+            if fact == query:
+                return True
+            inferred.add(fact)
+
+        for rule in KB['rules']:
+            # For each rule, we need to find substitutions making ALL premises true simultaneously
+            premises = rule['premises']
+            conclusion = rule['conclusion']
+
+            # Collect facts from KB to match premises
+            facts_by_pred = defaultdict(list)
+            for fact in inferred.union(new):
+                facts_by_pred[fact.predicate].append(fact)
+
+            # Generate all possible substitutions for premises
+            def find_substitutions(premises, subst_so_far):
+                if not premises:
+                    yield subst_so_far
+                    return
+                first, *rest = premises
+                for fact in facts_by_pred.get(first.predicate, []):
+                    subst = unify(first.args, fact.args, dict(subst_so_far))
+                    if subst is not None:
+                        yield from find_substitutions(rest, subst)
+
+            for subst in find_substitutions(premises, {}):
+                new_fact = substitute(conclusion, subst)
+                if new_fact not in inferred and new_fact not in new and new_fact not in next_new:
+                    next_new.add(new_fact)
+                    if new_fact == query:
+                        return True
+
+        if not next_new:
+            return False
+        new = next_new
+
+    return False
+
+
+# Knowledge Base
+KB = {
+    'facts': [
+        Fact('American', ['Robert']),
+        Fact('Hostile', ['CountryA']),
+        Fact('Sell', ['Robert', 'CountryA', 'Missile1']),
+        Fact('Sell', ['Robert', 'CountryA', 'Missile2']),
+        Fact('Weapon', ['Missile1']),
+        Fact('Weapon', ['Missile2']),
+    ],
+    'rules': [
+        {
+            'premises': [
+                Fact('American', ['x']),
+                Fact('Sell', ['x', 'y', 'z']),
+                Fact('Hostile', ['y']),
+                Fact('Weapon', ['z']),
+            ],
+            'conclusion': Fact('Criminal', ['x']),
+        }
+    ]
+}
+
+query = Fact('Criminal', ['Robert'])
+
+result = fol_fc_ask(KB, query)
+
+print(f"Is Robert criminal? {'Yes' if result else 'No'}")
