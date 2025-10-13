@@ -1,0 +1,101 @@
+print("Sinchana1BM23CS329")
+from typing import Union, List, Dict, Optional
+
+# Define Term type
+Term = Union[str, 'Function']  # str for variable or constant, Function for complex terms
+
+class Function:
+    def __init__(self, name: str, args: List[Term]):
+        self.name = name
+        self.args = args
+
+    def __repr__(self):
+        return f"{self.name}({', '.join(map(str, self.args))})"
+
+def is_variable(x: Term) -> bool:
+    # Assume variables are strings starting with lowercase letters
+    return isinstance(x, str) and x[0].islower()
+
+def is_constant(x: Term) -> bool:
+    # Constants are strings starting with uppercase or are atoms with no args
+    return isinstance(x, str) and x[0].isupper()
+
+def occurs_check(var: str, term: Term, subst: Dict[str, Term]) -> bool:
+    """Check if var occurs in term (considering substitutions) to avoid infinite loops."""
+    if var == term:
+        return True
+    elif is_variable(term) and term in subst:
+        return occurs_check(var, subst[term], subst)
+    elif isinstance(term, Function):
+        return any(occurs_check(var, arg, subst) for arg in term.args)
+    else:
+        return False
+
+def unify(x: Term, y: Term, subst: Optional[Dict[str, Term]] = None) -> Optional[Dict[str, Term]]:
+    """Unify terms x and y with current substitution subst."""
+    if subst is None:
+        subst = {}
+
+    if subst is False:
+        return False
+
+    if x == y:
+        return subst
+
+    if is_variable(x):
+        return unify_var(x, y, subst)
+
+    if is_variable(y):
+        return unify_var(y, x, subst)
+
+    if isinstance(x, Function) and isinstance(y, Function):
+        if x.name != y.name or len(x.args) != len(y.args):
+            return False
+        for a, b in zip(x.args, y.args):
+            subst = unify(a, b, subst)
+            if subst is False:
+                return False
+        return subst
+
+    return False
+
+def unify_var(var: str, x: Term, subst: Dict[str, Term]) -> Optional[Dict[str, Term]]:
+    """Unify variable var with term x under substitution subst."""
+    if var in subst:
+        return unify(subst[var], x, subst)
+    elif is_variable(x) and x in subst:
+        return unify(var, subst[x], subst)
+    elif occurs_check(var, x, subst):
+        # Occurs check fails
+        return False
+    else:
+        # Add substitution and return
+        subst[var] = x
+        return subst
+
+# Example usage
+
+if __name__ == "__main__":
+    # Define terms for Eats(x, Apple) and Eats(Riya, y)
+    expr1 = Function('Eats', ['x', 'Apple'])
+    expr2 = Function('Eats', ['Riya', 'y'])
+
+    result = unify(expr1, expr2)
+    if result is False:
+        print("Unification failed.")
+    else:
+        print("Unification succeeded. Substitution:")
+        for var, val in result.items():
+            print(f"{var} = {val}")
+
+        # Apply substitutions to expr1 (just for illustration)
+        def apply_subst(term, subst):
+            if is_variable(term) and term in subst:
+                return apply_subst(subst[term], subst)
+            elif isinstance(term, Function):
+                return Function(term.name, [apply_subst(arg, subst) for arg in term.args])
+            else:
+                return term
+
+        unified_expr = apply_subst(expr1, result)
+        print("Unified expression:", unified_expr)
