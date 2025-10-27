@@ -1,0 +1,162 @@
+
+
+from copy import deepcopy
+
+# ---------- Helper Functions ----------
+
+def parse_clause(clause_str):
+    """Parse user-input clause string like '~food(x) ∨ likes(John,x)'."""
+    literals = []
+    parts = [p.strip() for p in clause_str.split('∨')]
+    for part in parts:
+        pred_name = part.split('(')[0].strip()
+        args_str = part[part.find('(') + 1: part.find(')')]
+        args = [a.strip() for a in args_str.split(',') if a.strip()]
+        literals.append(tuple([pred_name] + args))
+    return literals
+
+def is_variable(term):
+    """Check if a term is a variable (starts with lowercase letter)."""
+    return isinstance(term, str) and term and term[0].islower()
+
+def unify(x, y, subs=None):
+    """Unify two literals and return substitution dictionary."""
+    if subs is None:
+        subs = {}
+    if x == y:
+        return subs
+    if is_variable(x):
+        return unify_var(x, y, subs)
+    if is_variable(y):
+        return unify_var(y, x, subs)
+    if isinstance(x, tuple) and isinstance(y, tuple):
+        if x[0] != y[0] or len(x) != len(y):
+            return None
+        for a, b in zip(x[1:], y[1:]):
+            subs = unify(a, b, subs)
+            if subs is None:
+                return None
+        return subs
+    return None
+
+def unify_var(var, x, subs):
+    if var in subs:
+        return unify(subs[var], x, subs)
+    if x in subs:
+        return unify(var, subs[x], subs)
+    subs[var] = x
+    return subs
+
+def substitute(clause, subs):
+    """Apply substitutions to a clause."""
+    new_clause = []
+    for lit in clause:
+        pred, *args = lit[0], lit[1:]
+        new_args = [subs.get(a, a) for a in args]
+        new_clause.append((pred, *new_args))
+    return new_clause
+
+def negate_literal(literal):
+    """Negate a literal (add/remove '~')."""
+    pred = literal[0]
+    if pred.startswith('~'):
+        return (pred[1:],) + literal[1:]
+    else:
+        return ('~' + pred,) + literal[1:]
+
+def clause_str(clause):
+    """Readable string for a clause (handles tuples safely)."""
+    parts = []
+    for l in clause:
+        pred = l[0]
+        args = [str(a) for a in l[1:]]  # convert everything to string
+        parts.append(f"{pred}({', '.join(args)})")
+    return " ∨ ".join(parts) if parts else "{}"
+
+
+def resolve(ci, cj):
+    """Try to resolve two clauses; return new resolvent and explanation."""
+    for lit1 in ci:
+        for lit2 in cj:
+            if lit1[0] == '~' + lit2[0] or lit2[0] == '~' + lit1[0]:
+                subs = unify(lit1[1:], lit2[1:])
+                if subs is not None:
+                    new_clause = (
+                        substitute([x for x in ci if x != lit1], subs) +
+                        substitute([x for x in cj if x != lit2], subs)
+                    )
+                    new_clause = list(set(new_clause))  # remove duplicates
+                    step = (ci, cj, lit1, lit2, subs, new_clause)
+                    return new_clause, step
+    return None, None
+
+# ---------- User Input ----------
+
+print("------------------------------------------------------")
+print("Interactive Resolution Theorem Prover (FOL)")
+print("------------------------------------------------------")
+
+num = int(input("Enter number of knowledge base (KB) statements: "))
+
+KB = []
+print("\nEnter each clause in CNF form (use ∨ for OR, ~ for negation).")
+print("Example: ~food(x) ∨ likes(John,x)")
+for i in range(num):
+    clause_str_input = input(f"Clause {i+1}: ").strip()
+    KB.append(parse_clause(clause_str_input))
+
+print("\nEnter your query (predicate arg1 arg2 ...), e.g. likes John Peanuts:")
+query_input = input("Query: ").strip().split()
+query = tuple(query_input)
+negated_query = [negate_literal(query)]
+KB.append(negated_query)
+
+print("\n------------------------------------------------------")
+print("Knowledge Base:")
+for idx, clause in enumerate(KB[:-1]):
+    print(f"{chr(97+idx)}. {clause_str(clause)}")
+print(f"Query (negated): {clause_str(negated_query)}")
+print("------------------------------------------------------")
+
+# ---------- Resolution Process ----------
+
+tree = []
+step_count = 0
+new = set()
+
+while True:
+    n = len(KB)
+    pairs = [(KB[i], KB[j]) for i in range(n) for j in range(i + 1, n)]
+    added_new = False
+
+    for (ci, cj) in pairs:
+        resolvent, step = resolve(ci, cj)
+        if resolvent is None:
+            continue
+        step_count += 1
+        (c1, c2, l1, l2, subs, new_clause) = step
+        tree.append(f"{step_count}. {clause_str(c1)} ⟹ {clause_str(c2)} "
+                    f"using {l1} & {l2} with {subs} → {clause_str(new_clause)}")
+        if not resolvent:  # Empty clause found
+            print("\n------------------------------------------------------")
+            print("✅ Proof by Resolution - Stepwise Tree")
+            print("------------------------------------------------------")
+            for line in tree:
+                print(line)
+            print("\nHence proved ✅ (Empty clause {})")
+            exit()
+        resolvent_tuple = tuple(sorted(resolvent))
+        if resolvent_tuple not in new:
+            new.add(resolvent_tuple)
+            added_new = True
+
+    if not added_new:
+        print("\n❌ No contradiction found — query cannot be proved.")
+        print("\nResolution Steps:")
+        for line in tree:
+            print(line)
+        break
+
+    for c in new:
+        if list(c) not in KB:
+            KB.append(list(c))
