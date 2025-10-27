@@ -1,0 +1,87 @@
+
+
+def alpha_beta(depth, node_index, is_maximizing_player, values, alpha, beta, max_depth, pruned_nodes, move_trace):
+    """
+    Recursive function for Alpha-Beta Pruning
+    """
+
+  
+    if depth == max_depth:
+        move_trace.append(f"{'|   '*depth}Leaf Node[{node_index}] → Value = {values[node_index]}")
+        return values[node_index]
+
+
+    if is_maximizing_player:
+        move_trace.append(f"{'|   '*depth}MAX Node at depth {depth}, α={alpha}, β={beta}")
+        best = float('-inf')
+
+        for i in range(2):
+            move_trace.append(f"{'|   '*depth}→ Exploring child {i} of node {node_index}")
+            val = alpha_beta(depth + 1, node_index * 2 + i, False, values, alpha, beta, max_depth, pruned_nodes, move_trace)
+            best = max(best, val)
+            alpha = max(alpha, best)
+            move_trace.append(f"{'|   '*depth}Updated α={alpha}, β={beta}, Best={best}")
+
+            if beta <= alpha:
+                pruned_nodes.append(f"Pruned branch at depth {depth}, node {node_index}, branch {i+1}")
+                move_trace.append(f"{'|   '*depth}❌ PRUNED remaining branches (β ≤ α)")
+                break
+        move_trace.append(f"{'|   '*depth}Returning {best} from MAX node at depth {depth}")
+        return best
+
+    # If it's the MIN player's turn
+    else:
+        move_trace.append(f"{'|   '*depth}MIN Node at depth {depth}, α={alpha}, β={beta}")
+        best = float('inf')
+
+        for i in range(2):
+            move_trace.append(f"{'|   '*depth}→ Exploring child {i} of node {node_index}")
+            val = alpha_beta(depth + 1, node_index * 2 + i, True, values, alpha, beta, max_depth, pruned_nodes, move_trace)
+            best = min(best, val)
+            beta = min(beta, best)
+            move_trace.append(f"{'|   '*depth}Updated α={alpha}, β={beta}, Best={best}")
+
+            # Prune if possible
+            if beta <= alpha:
+                pruned_nodes.append(f"Pruned branch at depth {depth}, node {node_index}, branch {i+1}")
+                move_trace.append(f"{'|   '*depth}❌ PRUNED remaining branches (β ≤ α)")
+                break
+        move_trace.append(f"{'|   '*depth}Returning {best} from MIN node at depth {depth}")
+        return best
+
+
+# ------------------- MAIN PROGRAM -------------------
+
+print("Alpha-Beta Pruning (Cutoff) Search Algorithm with Step Trace")
+print("BMSCE - 29 November 2024\n")
+
+# Step 1: Take input for depth and leaf node values
+max_depth = int(input("Enter maximum depth of the tree (e.g., 3): "))
+num_leaves = 2 ** max_depth
+
+print(f"Enter {num_leaves} leaf node values separated by space:")
+values = list(map(int, input().split()))
+
+# Step 2: Initialize alpha, beta, and other parameters
+alpha = float('-inf')
+beta = float('inf')
+pruned_nodes = []
+move_trace = []
+
+# Step 3: Call the Alpha-Beta Pruning function
+root_value = alpha_beta(0, 0, True, values, alpha, beta, max_depth, pruned_nodes, move_trace)
+
+# Step 4: Display trace and results
+print("\n================== TRACE OF EXECUTION ==================")
+for move in move_trace:
+    print(move)
+
+print("\n================== FINAL RESULT ==================")
+print(f"Value of Root Node (MAX): {root_value}")
+
+print("\nPruned Branches:")
+if len(pruned_nodes) == 0:
+    print("No branches were pruned.")
+else:
+    for node in pruned_nodes:
+        print(" -", node)
